@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3637ACC8-1372-4750-98FB-71647540FD37}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proyecto_sistema_facturacion</RootNamespace>
+    <AssemblyName>Proyecto_sistema_facturacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAcercaDE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcercaDE.Designer.cs">
+      <DependentUpon>frmAcercaDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAyuda.Designer.cs">
+      <DependentUpon>frmAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarCategoria.Designer.cs">
+      <DependentUpon>frmEditarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarCliente.Designer.cs">
+      <DependentUpon>frmEditarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarEmpleados.Designer.cs">
+      <DependentUpon>frmEditarEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarFacturas.Designer.cs">
+      <DependentUpon>frmEditarFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarProducto.Designer.cs">
+      <DependentUpon>frmEditarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarRoles.Designer.cs">
+      <DependentUpon>frmEditarRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarSeguridad.Designer.cs">
+      <DependentUpon>frmEditarSeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerarInforme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerarInforme.Designer.cs">
+      <DependentUpon>frmGenerarInforme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaEmpleados.Designer.cs">
+      <DependentUpon>frmListaEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaInformes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaInformes.Designer.cs">
+      <DependentUpon>frmListaInformes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaCategorias.Designer.cs">
+      <DependentUpon>frmListaCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaClientes.Designer.cs">
+      <DependentUpon>frmListaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaFacturas.Designer.cs">
+      <DependentUpon>frmListaFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaProductos.Designer.cs">
+      <DependentUpon>frmListaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaRoles.Designer.cs">
+      <DependentUpon>frmListaRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaSeguridad.Designer.cs">
+      <DependentUpon>frmListaSeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmlogin.Designer.cs">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAcercaDE.resx">
+      <DependentUpon>frmAcercaDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAyuda.resx">
+      <DependentUpon>frmAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarCategoria.resx">
+      <DependentUpon>frmEditarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarCliente.resx">
+      <DependentUpon>frmEditarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarEmpleados.resx">
+      <DependentUpon>frmEditarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarFacturas.resx">
+      <DependentUpon>frmEditarFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarProducto.resx">
+      <DependentUpon>frmEditarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarRoles.resx">
+      <DependentUpon>frmEditarRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarSeguridad.resx">
+      <DependentUpon>frmEditarSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerarInforme.resx">
+      <DependentUpon>frmGenerarInforme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaEmpleados.resx">
+      <DependentUpon>frmListaEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaInformes.resx">
+      <DependentUpon>frmListaInformes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaCategorias.resx">
+      <DependentUpon>frmListaCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaClientes.resx">
+      <DependentUpon>frmListaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaFacturas.resx">
+      <DependentUpon>frmListaFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaProductos.resx">
+      <DependentUpon>frmListaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaRoles.resx">
+      <DependentUpon>frmListaRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaSeguridad.resx">
+      <DependentUpon>frmListaSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmlogin.resx">
+      <DependentUpon>Frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facturacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-sesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-sesion1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-sesion2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-sesion3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-sesion %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\productos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\categorias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\facturas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\informe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\empleado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\roles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\seguridad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\acerca de.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
