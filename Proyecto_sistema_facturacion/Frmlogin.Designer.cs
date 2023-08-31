@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            //sapo hpta
+            //sapo hpta 2
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LblTitulo = new MaterialSkin.Controls.MaterialLabel();
